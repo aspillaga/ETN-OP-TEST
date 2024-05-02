@@ -1,0 +1,42 @@
+model {
+
+  # Observation level
+  for (i in 1:n_obs) {
+
+    # Binomial distribution
+    detections_obs[i] ~ dbin(p[i], emissions_obs[i])
+
+    # Logistic model for probability
+    L_obs[i] <- L_t[ID_trial_obs[i]]
+    inflexion_obs[i] <- inflexion_t[ID_trial_obs[i]]
+    b_obs[i] <- b_t[ID_trial_obs[i]]
+    a[i] <- -inflexion_obs[i] * b_obs[i]
+
+    p[i] <- L_obs[i] / (1 + exp(-(a[i] + b_obs[i] * x[i])))
+  }
+
+  # Trial level, random factor: Separate days
+  for (t in 1:n_trial) {
+    L_t[t] ~ dnorm(L_m[ID_method_trial[t]], tol_L_m[ID_method_trial[t]])
+    inflexion_t[t] ~ dnorm(inflexion_m[ID_method_trial[t]],
+                           tol_inflexion_m[ID_method_trial[t]])
+    b_t[t] ~ dnorm(b_m[ID_method_trial[t]], tol_b_m[ID_method_trial[t]])
+
+  }
+
+  # Method level, fixed factor: combination of receiver and tag manufacturers
+  for (m in 1:n_method) {
+    L_m[m] ~ dunif(0, 1)
+    sd_L_m[m] ~ dgamma(1, 1)
+    tol_L_m[m] <- 1/sd_L_m[m]^2
+
+    inflexion_m[m] ~ dunif(0, 400)
+    sd_inflexion_m[m] ~ dgamma(1, 0.01)
+    tol_inflexion_m[m] <- 1/sd_inflexion_m[m]^2
+
+    b_m[m] ~ dnorm(0, 100)T(-1, 0) # Must be negative
+    sd_b_m[m] ~ dgamma(1, 1)
+    tol_b_m[m] <- 1/sd_b_m[m]^2
+  }
+
+}
