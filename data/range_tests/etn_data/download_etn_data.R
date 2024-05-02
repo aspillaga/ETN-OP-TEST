@@ -11,6 +11,10 @@
 ##
 ################################################################################
 
+# NOTE: All this script should be run within the European Tracking Network
+#       R studio server (https://rstudio.lifewatch.be/), because it is the only 
+#       way to access the ETN database.
+
 # Load libraries
 library(data.table)
 library(etn)
@@ -22,8 +26,8 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 # 1. DOWNLOAD DATA FROM THE ETN DATABASE =======================================
 
 # Database connection
-usr <- "my_user"
-pass <- "password"
+usr <- "my_user" # Personal user name
+pass <- "password" # Password
 con <- connect_to_etn(usr, pass)
 
 # Select acoustic telemetry project
@@ -92,9 +96,6 @@ detect <- detect[, c("detection_id", "date_time", "tag_serial_number",
 
 
 # 1.6. Export files to load them offline -------------------------------------
-
-# Directory to export the data
-dir.create("./data/etn_data/", showWarnings = FALSE, recursive = TRUE)
 
 fwrite(receivers, "etn_receiver_deployments.csv")
 fwrite(rec_metadata, "etn_receiver_metadata.csv")
