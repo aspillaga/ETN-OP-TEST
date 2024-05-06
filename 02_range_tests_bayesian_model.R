@@ -489,7 +489,7 @@ rec_col_l <-  c("#4A6DB4", "#024F18", "#B2A31B", "#CC4B12", "#5D2E88")
 
 # Parameters
 param_list <- c("L", "b", "inflexion", "P_0", "x_r")
-param_lab <- c("L (detection prob.)", "b (slope)", "Inflexion point (m)", 
+param_lab <- c("L (detection prob.)", "b (slope)", "Inflection point (m)", 
                expression("P"[0] ~ "(Detect. prob. at 0 m)"),
                expression("x"[r]~"(50% range, m)"))
 param_yline <- c(2.6, 3.4, 3.2, 2.6, 3.2)
