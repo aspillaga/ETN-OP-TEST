@@ -36,7 +36,7 @@ renameMfs <- function(x) {
   sub("THELMA BIOTEL|THELMA", "Thelma", 
       sub("LOTEK", "Lotek",
           sub("SONOTRONICS", "Sonotronics",
-              sub("VEMCO", "Innovasea", x))))
+              sub("VEMCO|INNOVASEA", "Innovasea", x))))
 }
 
 # Function to rename acoustic signal protocols
@@ -56,7 +56,7 @@ receivers$receiver_model <- rec_metadata$receiver_model[indx_r]
 receivers$receiver_serial_number <- rec_metadata$receiver_serial_number[indx_r]
 receivers$manufacturer <- renameMfs(rec_metadata$manufacturer[indx_r])
 
-# Add codemap information to Innovasea's receiver manufacturer label
+# Add code map information to Innovasea's receiver manufacturer label
 inno <- which(receivers$manufacturer == "Innovasea")
 map <- ifelse(grepl("MAP115", receivers$station_name[inno]), "MAP115", "MAP114")
 receivers$manufacturer[inno] <- paste0(receivers$manufacturer[inno], "-", map)

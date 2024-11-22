@@ -328,7 +328,7 @@ for (i in seq_along(test_lab)) {
   axis(1, at = axis_at, labels = gsub("-", "\n", names(axis_at)), 
        lwd = 0, line = -0.7, padj = 0.5)
   
-  title(ylab = "% of detections / day", line = 2.6)
+  title(ylab = "% of false detections / day", line = 2.6)
   title(xlab = "Receiver manufacturer", line = 2.6, font.lab = 2)
   box()
   
