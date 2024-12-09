@@ -1,7 +1,7 @@
 ################################################################################
 ##
 ## OP-TESTS
-## Model detection range using Bayesian inference
+## Modelling detection range using Bayesian inference
 ##
 ## Author: 
 ## Eneko Aspillaga (aspillaga@imedea.uib-csic.es)

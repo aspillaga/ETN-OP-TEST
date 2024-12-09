@@ -1,7 +1,7 @@
 ################################################################################
 ##
 ## OP-TESTS
-## Analysis of false detections
+## False detection analysis
 ##
 ## Author: 
 ## Eneko Aspillaga (aspillaga@imedea.uib-csic.es)

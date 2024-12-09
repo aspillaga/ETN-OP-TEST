@@ -306,7 +306,7 @@ fwrite(detect_2h, file = "./data/range_tests/detections_2h_intervals.csv")
 
 # 3. CHECK PLOTS ===============================================================
 
-# Create directory for plots
+# Create directory for results
 dir.create("./plots/range_tests/data_check/", showWarnings = FALSE, 
            recursive = TRUE)
 

@@ -1,7 +1,7 @@
 ################################################################################
 ##
 ## OP-TESTS
-## Analyze data from smolt migration test
+## Field comparison of OPi and R64K protocols to study smolt migration
 ##
 ## Author: 
 ## Eneko Aspillaga (aspillaga@imedea.uib-csic.es)
