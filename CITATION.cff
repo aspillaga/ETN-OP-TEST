@@ -1,0 +1,132 @@
+cff-version: 1.2.0
+title: ETN OP Test data set
+message: 'If you use this data set, please cite it as below.'
+type: dataset
+authors:
+  - given-names: Eneko
+    family-names: Aspillaga
+    email: aspillaga@imedea.uib-csic.es
+    affiliation: >-
+      Institut Mediterrani d’Estudis Avançats (IMEDEA,
+      CSIC-UIB), Spain
+    orcid: 'https://orcid.org/0000-0002-8888-8731'
+  - given-names: Stijn
+    family-names: Bruneel
+    affiliation: >-
+      Department of Animal Sciences and Aquatic Ecology,
+      Ghent University – Research Institute for Nature and
+      Forest (INBO), Belgium
+  - given-names: Josep
+    family-names: Alós
+    affiliation: >-
+      Institut Mediterrani d’Estudis Avançats (IMEDEA,
+      CSIC-UIB), Spain
+  - given-names: Pieterjan
+    family-names: Verhelst
+    affiliation: >-
+      Research Institute for Nature and Forest (INBO),
+      Belgium
+  - given-names: David
+    family-names: Abecasis
+    affiliation: >-
+      Centro de Ciências do Mar (CCMAR), Universidade do
+      Algarve, Portugal
+  - given-names: Kim
+    family-names: Aarestrup
+    affiliation: >-
+      National Institute of Aquatic Resources, Technical
+      University of Denmark, Denmark
+  - given-names: Kim
+    family-names: Birnie-Gauvin
+    affiliation: >-
+      National Institute of Aquatic Resources, Technical
+      University of Denmark, Denmark
+  - given-names: Pedro
+    family-names: Afonso
+    affiliation: >-
+      Institute of Marine Sciences - Okeanos, University of
+      the Azores – Institute of Marine Research - IMAR,
+      Portugal
+  - given-names: Miquel
+    family-names: Palmer
+    affiliation: >-
+      Institut Mediterrani d’Estudis Avançats (IMEDEA,
+      CSIC-UIB), Spain
+  - given-names: Jan
+    family-names: Reubens
+    affiliation: 'Flanders Marine Institute (VLIZ), Belgium'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.14333087
+    description: Zenodo repository
+abstract: >-
+  Data and scripts from OP interoperability tests conducted
+  in European waters
+
+  From the manuscript: Open Protocols, the new standard for
+  acoustic tracking: results from interoperability and
+  performance tests in European waters published in Animal
+  Biotelemetry.
+preferred-citation:
+  type: article
+  authors:
+  - given-names: Eneko
+    family-names: Aspillaga
+    email: aspillaga@imedea.uib-csic.es
+    affiliation: >-
+      Institut Mediterrani d’Estudis Avançats (IMEDEA,
+      CSIC-UIB), Spain
+    orcid: 'https://orcid.org/0000-0002-8888-8731'
+  - given-names: Stijn
+    family-names: Bruneel
+    affiliation: >-
+      Department of Animal Sciences and Aquatic Ecology,
+      Ghent University – Research Institute for Nature and
+      Forest (INBO), Belgium
+  - given-names: Josep
+    family-names: Alós
+    affiliation: >-
+      Institut Mediterrani d’Estudis Avançats (IMEDEA,
+      CSIC-UIB), Spain
+  - given-names: Pieterjan
+    family-names: Verhelst
+    affiliation: >-
+      Research Institute for Nature and Forest (INBO),
+      Belgium
+  - given-names: David
+    family-names: Abecasis
+    affiliation: >-
+      Centro de Ciências do Mar (CCMAR), Universidade do
+      Algarve, Portugal
+  - given-names: Kim
+    family-names: Aarestrup
+    affiliation: >-
+      National Institute of Aquatic Resources, Technical
+      University of Denmark, Denmark
+  - given-names: Kim
+    family-names: Birnie-Gauvin
+    affiliation: >-
+      National Institute of Aquatic Resources, Technical
+      University of Denmark, Denmark
+  - given-names: Pedro
+    family-names: Afonso
+    affiliation: >-
+      Institute of Marine Sciences - Okeanos, University of
+      the Azores – Institute of Marine Research - IMAR,
+      Portugal
+  - given-names: Miquel
+    family-names: Palmer
+    affiliation: >-
+      Institut Mediterrani d’Estudis Avançats (IMEDEA,
+      CSIC-UIB), Spain
+  - given-names: Jan
+    family-names: Reubens
+    affiliation: 'Flanders Marine Institute (VLIZ), Belgium'
+  doi: "10.1186/s40317-024-00396-9"
+  journal: "Animal Biotelemetry"
+  start: X 
+  end: XX
+  title: "Open Protocols, the new standard for acoustic tracking: results from interoperability and performance tests in European waters"
+  issue: 1
+  volume: 1
+  year: 2024
